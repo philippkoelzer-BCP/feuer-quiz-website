@@ -127,7 +127,7 @@ h1 {
   padding: 10px 18px;
   border-radius: 999px;
   border: none;
-  background: var(--primary);
+  background: #e25822;
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -159,6 +159,41 @@ h1 {
 #restartBtn {
   margin-top: 10px;
   display: none;
+}
+
+#summary {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.summary-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.summary-item {
+  border-top: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.summary-item:last-child {
+  border-bottom: 1px solid #eee;
+}
+
+.summary-question {
+  font-weight: 600;
+}
+
+.summary-answer {
+  margin-left: 10px;
+}
+
+.summary-correct {
+  color: #2e7d32;
+}
+
+.summary-wrong {
+  color: #c62828;
 }
 
 @media (max-width: 600px) {

@@ -2,121 +2,137 @@ const BASE_QUESTIONS = [
   {
     type: "mc",
     category: "Grundlagen",
-    question: "Welche drei Dinge braucht ein Feuer, um zu brennen?",
+    question: "Welche drei Bedingungen braucht ein Feuer?",
     answers: [
-      "Sauerstoff, Brennstoff, Zündenergie",
-      "Wasser, Holz, Licht",
-      "Metall, Kohlenstoff, Hitze"
-    ],
-    correctIndex: 0
-  },
-  {
-    type: "mc",
-    category: "Brennstoffe",
-    question: "Welcher Stoff ist ein typischer Brennstoff?",
-    answers: ["Kupfer", "Holz", "Sand"],
-    correctIndex: 1
-  },
-  {
-    type: "tf",
-    category: "Sauerstoff",
-    question: "Wahr oder falsch: Ohne Sauerstoff kann kein Feuer entstehen.",
-    correct: true
-  },
-  {
-    type: "mc",
-    category: "Zündtemperatur",
-    question: "Was versteht man unter Zündtemperatur?",
-    answers: [
-      "Die Temperatur, bei der ein Stoff von selbst zu brennen beginnt",
-      "Die Temperatur, bei der Wasser kocht",
-      "Die Temperatur, bei der Rauch entsteht"
+      "Sauerstoff, Brennstoff, Zündquelle",
+      "Wasser, Luft, Metall",
+      "Wind, Licht, Holz"
     ],
     correctIndex: 0
   },
   {
     type: "tf",
-    category: "Oberfläche",
-    question: "Wahr oder falsch: Eine größere Oberfläche (z.B. feine Holzspäne) brennt schneller als ein großes Stück Holz.",
+    category: "Grundlagen",
+    question: "Wahr oder falsch: Ein Feuer erlischt, wenn man eine der drei Bedingungen (z.B. Sauerstoff) wegnimmt.",
     correct: true
   },
   {
     type: "mc",
-    category: "Verbrennung",
-    question: "Welcher Vorgang ist eine Verbrennung?",
-    answers: ["Eis schmilzt", "Holz entzündet sich", "Wasser verdunstet"],
+    category: "Brandschutz",
+    question: "Was ist im Klassenzimmer beim Umgang mit Kerzen besonders wichtig?",
+    answers: [
+      "Kerzen niemals unbeaufsichtigt lassen",
+      "Kerzen direkt unter Papierdekoration stellen",
+      "Kerzen neben Gardinen aufstellen"
+    ],
+    correctIndex: 0
+  },
+  {
+    type: "tf",
+    category: "Brandschutz",
+    question: "Wahr oder falsch: Ein Papierkorbbrand kann sich im Klassenzimmer sehr schnell ausbreiten.",
+    correct: true
+  },
+  {
+    type: "mc",
+    category: "Verhalten im Brandfall",
+    question: "Welche Nummer wählst du im Brandfall in Deutschland?",
+    answers: [
+      "112",
+      "110",
+      "911"
+    ],
+    correctIndex: 0
+  },
+  {
+    type: "mc",
+    category: "Verhalten im Brandfall",
+    question: "Was ist die richtige Reihenfolge beim Notruf?",
+    answers: [
+      "Wer meldet? Was ist passiert? Wo ist es passiert?",
+      "Wie ist das Wetter? Wer bist du?",
+      "Wann musst du wieder in der Schule sein?"
+    ],
+    correctIndex: 0
+  },
+  {
+    type: "tf",
+    category: "Rauch",
+    question: "Wahr oder falsch: Rauch ist ungefährlich, Hauptsache, man ist weit genug weg vom Feuer.",
+    correct: false
+  },
+  {
+    type: "mc",
+    category: "Rauch",
+    question: "Wie verhältst du dich richtig, wenn ein Flur voller Rauch ist?",
+    answers: [
+      "Aufrecht und schnell durchrennen",
+      "Flach am Boden bleiben und unter dem Rauch hindurchkriechen",
+      "Das Atmen anhalten und durch den Rauch laufen"
+    ],
     correctIndex: 1
   },
   {
     type: "mc",
-    category: "Verbrennungsdreieck",
-    question: "Welches gehört NICHT zum Verbrennungsdreieck?",
-    answers: ["Sauerstoff", "Zündenergie", "Kälte"],
+    category: "Löschen",
+    question: "Was solltest du NICHT mit Wasser löschen?",
+    answers: [
+      "Brennendes Holzscheit",
+      "Brennende Kerze",
+      "Brennendes heißes Fett in der Pfanne"
+    ],
     correctIndex: 2
   },
   {
     type: "tf",
-    category: "Funken",
-    question: "Wahr oder falsch: Funken entstehen, wenn zwei Materialien stark aneinander gerieben werden.",
+    category: "Löschen",
+    question: "Wahr oder falsch: Brennendes Fett in der Pfanne löscht man am besten mit einem passenden Deckel.",
     correct: true
   },
   {
     type: "mc",
-    category: "Löschen",
-    question: "Warum löscht man Feuer häufig mit Wasser?",
+    category: "Fluchtwege",
+    question: "Was ist bei Fluchtwegen in der Schule wichtig?",
     answers: [
-      "Wasser erhöht die Temperatur",
-      "Wasser entzieht dem Feuer Wärme",
-      "Wasser liefert zusätzlichen Sauerstoff"
+      "Fluchtwege dürfen mit Stühlen zugestellt sein",
+      "Fluchtwege müssen immer frei und gekennzeichnet sein",
+      "Fluchtwege dürfen abgeschlossen sein"
     ],
     correctIndex: 1
   },
   {
     type: "tf",
-    category: "Oberfläche",
-    question: "Wahr oder falsch: Papier entzündet sich schneller, wenn es fein zerkleinert wurde.",
-    correct: true
+    category: "Aufzug",
+    question: "Wahr oder falsch: Im Brandfall darf man den Aufzug benutzen, um schneller nach draußen zu kommen.",
+    correct: false
   },
   {
     type: "mc",
-    category: "Chemische Reaktion",
-    question: "Was passiert bei einer Verbrennung chemisch?",
+    category: "Feuerlöscher",
+    question: "Was solltest du tun, bevor du einen Feuerlöscher benutzt?",
     answers: [
-      "Der Stoff reagiert mit Sauerstoff",
-      "Der Stoff friert",
-      "Der Stoff wird flüssig"
+      "Erst die Lehrkraft oder eine erwachsene Person informieren",
+      "Den Löscher schütteln und hinlegen",
+      "Den Löscher ins Feuer werfen"
     ],
     correctIndex: 0
   },
   {
     type: "tf",
-    category: "Eigenschaften",
-    question: "Wahr oder falsch: Ein Feuer erzeugt immer Licht und Wärme.",
+    category: "Verhalten",
+    question: "Wahr oder falsch: Bei einem Feueralarm sollst du ruhig bleiben, zügig gehen und keine Sachen mehr einpacken.",
     correct: true
   },
   {
     type: "mc",
-    category: "Verbrennungsprodukte",
-    question: "Welcher Stoff entsteht bei fast jeder Verbrennung kohlenstoffhaltiger Stoffe?",
-    answers: ["Kohlenstoffdioxid", "Helium", "Stickstoff"],
-    correctIndex: 0
-  },
-  {
-    type: "mc",
-    category: "Löschen",
-    question: "Welche Maßnahme kann ein Feuer löschen?",
+    category: "Verhalten",
+    question: "Was machst du, wenn deine Kleidung Feuer fängt?",
     answers: [
-      "Zufuhr von mehr Brennstoff",
-      "Entzug von Sauerstoff",
-      "Erhöhung der Temperatur"
+      "Weglaufen und schreien",
+      "Am Boden hin- und herrollen, um die Flammen zu ersticken",
+      "Auf einen Stuhl springen"
     ],
     correctIndex: 1
-  },
-  {
-    type: "tf",
-    category: "Flamme",
-    question: "Wahr oder falsch: Eine Flamme ist ein glühendes Gas.",
-    correct: true
   }
 ];
 
@@ -141,8 +157,9 @@ let score = 0;
 let selectedAnswer = null;
 let timerId = null;
 let timeLeft = QUIZ_TIME_SECONDS;
+let userAnswers = [];
 
-const highscoreKey = "feuerQuizBestScore";
+const highscoreKey = "feuerBrandschutzQuizBestScore";
 
 const categoryBadge = document.getElementById("categoryBadge");
 const progressEl = document.getElementById("progress");
@@ -154,6 +171,7 @@ const nextBtn = document.getElementById("nextBtn");
 const resultEl = document.getElementById("result");
 const infoEl = document.getElementById("info");
 const restartBtn = document.getElementById("restartBtn");
+const summaryEl = document.getElementById("summary");
 
 function loadHighscore() {
   const best = localStorage.getItem(highscoreKey);
@@ -190,7 +208,9 @@ function startQuiz() {
   currentIndex = 0;
   score = 0;
   selectedAnswer = null;
+  userAnswers = [];
   resultEl.textContent = "";
+  summaryEl.innerHTML = "";
   restartBtn.style.display = "none";
   nextBtn.disabled = true;
   infoEl.textContent = "";
@@ -255,12 +275,55 @@ function handleNext() {
 
   if (correct) score++;
 
+  userAnswers.push({
+    question: q.question,
+    type: q.type,
+    answers: q.answers,
+    correctIndex: q.correctIndex,
+    correctBool: q.correct,
+    userAnswerIndex: q.type === "mc" ? selectedAnswer : null,
+    userAnswerBool: q.type === "tf" ? selectedAnswer : null,
+    isCorrect: correct
+  });
+
   currentIndex++;
   if (currentIndex < questions.length && timeLeft > 0) {
     showQuestion();
   } else {
     finishQuiz(false);
   }
+}
+
+function renderSummary() {
+  let html = "<h3>Auswertung der Fragen</h3>";
+  html += '<ol class="summary-list">';
+  userAnswers.forEach((entry, index) => {
+    let correctText = "";
+    let userText = "";
+    if (entry.type === "mc") {
+      correctText = entry.correctIndex != null ? entry.answers[entry.correctIndex] : "–";
+      userText = entry.userAnswerIndex != null ? entry.answers[entry.userAnswerIndex] : "Keine Antwort";
+    } else if (entry.type === "tf") {
+      correctText = entry.correctBool ? "Wahr" : "Falsch";
+      if (entry.userAnswerBool === null) {
+        userText = "Keine Antwort";
+      } else {
+        userText = entry.userAnswerBool ? "Wahr" : "Falsch";
+      }
+    }
+
+    const icon = entry.isCorrect ? "✅" : "❌";
+    const cls = entry.isCorrect ? "summary-correct" : "summary-wrong";
+
+    html += '<li class="summary-item">';
+    html += '<div class="summary-question">' + (index + 1) + ". " + entry.question + "</div>";
+    html += '<div class="summary-answer ' + cls + '">' + icon +
+            " Deine Antwort: " + userText +
+            " – Richtige Antwort: " + correctText + "</div>";
+    html += "</li>";
+  });
+  html += "</ol>";
+  summaryEl.innerHTML = html;
 }
 
 function finishQuiz(timeUp) {
@@ -286,6 +349,7 @@ function finishQuiz(timeUp) {
     : " Bisheriger Highscore bleibt: " + highscoreValue + " Punkte.";
 
   resultEl.textContent = baseText + timeText + highscoreText;
+  renderSummary();
   restartBtn.style.display = "inline-flex";
 }
 
