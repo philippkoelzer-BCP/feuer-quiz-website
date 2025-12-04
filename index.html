@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz: Feuer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Quiz: Feuer</h1>
+  <div class="subtitle">Chemie – Grundlagen der Verbrennung</div>
+  <div class="highscore" id="highscore"></div>
+
+  <div class="quiz-box">
+    <div class="top-bar">
+      <div class="badge" id="categoryBadge">Kategorie: –</div>
+      <div class="progress" id="progress">Frage 0 / 0</div>
+      <div class="timer" id="timer">⏱ 05:00</div>
+    </div>
+
+    <div class="question" id="question"></div>
+    <div class="answers" id="answers"></div>
+
+    <div class="bottom-bar">
+      <div id="info"></div>
+      <button class="btn-primary" id="nextBtn" disabled>
+        Weiter ➜
+      </button>
+    </div>
+
+    <div id="result"></div>
+    <button class="btn-primary" id="restartBtn">🔁 Quiz neu starten</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
